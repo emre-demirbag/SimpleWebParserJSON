@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # Convert the python objects into json object and export
     # it to clues.json file.
 
-    with open('clues.json', 'w', encoding='latin-1') as outfile:
+    with open('clues.json', 'w', encoding='utf-8') as outfile:
         json.dump(res, outfile, indent=8, ensure_ascii=False)
 
 print("Created Json File")
